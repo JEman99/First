@@ -1,0 +1,13 @@
+# get the miles per gallon from the user
+puts "Miles?"
+miles = gets.to_f
+
+puts "Gallons?"
+gallons = gets.to_f
+
+mpg= miles / gallons
+
+puts"Your mpg is"
+puts mpg
+
+

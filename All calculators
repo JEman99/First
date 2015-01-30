@@ -1,0 +1,257 @@
+require 'complex'
+puts "What would you like to run? Press 1 for distance calculator on a line. Press 2 for Quadratic. Press 3 for Slope. Press 4 for Fibinacci"
+resp = gets.to_f
+if resp == 1
+  puts "Input X1"
+  x1 = gets.to_f
+  puts "input X2"
+  x2 = gets.to_f
+  puts "input Y1"
+  y1 = gets.to_f
+  puts "input Y2"
+  y2 = gets.to_f
+  xout1 = x2 -x1
+  xout2 = xout1 * xout1
+  yout1 =y2 - y1
+  yout2 = yout1 * yout1
+  allout1 = yout2 + xout2
+  ans = Math.sqrt(allout1)
+  puts "The Answer is:"
+  puts ans
+end
+if resp == 2
+  puts "Welcome to quadratic formula calulator"
+  puts "Input Value A"
+  a = gets.to_f
+  puts "Input Value B"
+  b = gets.to_f
+  puts "Input Value C"
+  c = gets.to_f
+  b2 = -(b)
+  bsquare = b * b
+  ac4block = -(a * c * 4)
+  ablock = a * 2
+  undersqrt = bsquare + ac4block
+  sqrt1 = Math.sqrt undersqrt
+  top1 = sqrt1 + b2
+  answer1 = top1 / ablock
+  top2 = sqrt1 - b2
+  answer2 = top2 / ablock
+
+  puts "Answer one is:"
+  puts answer1
+  puts "Answer two is:"
+  puts answer2
+end
+if resp == 3
+  puts "Y value 1?"
+  y1 = gets.to_f
+  puts "Y value 2?"
+  y2 = gets.to_f
+  puts "X Value 1?"
+  x1 = gets.to_f
+  puts "X Value 2?"
+  x2 = gets.to_f
+  yout = y2 - y1
+  xout = x2 - x1
+  m = yout / xout
+  puts m
+end
+if resp == 4
+  puts "What Sequence of numbers in The fibinacci sequence do you want?"
+  inum = gets.to_i
+  outnum1 = 0
+  outnum2 = 1
+  if inum == 1
+    puts "1"
+  end
+
+  if  inum > 1
+    inum2 = inum - 1
+    inum = inum2
+    inum.times do
+      outnum3 = outnum2
+      tempnum = outnum1 + outnum2
+      outnum2 = tempnum
+      outnum1 = outnum3
+    end
+    puts outnum2
+  end
+end
+if resp < 1
+  puts "Invalid output enter proper number"
+  puts "What would you like to run? Press 1 for distance calculator on a line. Press 2 for Quadratic. Press 3 for Slope. Press 4 for Fibinacci"
+  resp = gets.to_f
+  if resp == 1
+    puts "Input X1"
+    x1 = gets.to_f
+    puts "input X2"
+    x2 = gets.to_f
+    puts "input Y1"
+    y1 = gets.to_f
+    puts "input Y2"
+    y2 = gets.to_f
+    xout1 = x2 -x1
+    xout2 = xout1 * xout1
+    yout1 =y2 - y1
+    yout2 = yout1 * yout1
+    allout1 = yout2 + xout2
+    ans = Math.sqrt(allout1)
+    puts "The Answer is:"
+    puts ans
+  end
+  if resp == 2
+    puts "Welcome to quadratic formula calulator"
+    puts "Input Value A"
+    a = gets.to_f
+    puts "Input Value B"
+    b = gets.to_f
+    puts "Input Value C"
+    c = gets.to_f
+    b2 = -(b)
+    bsquare = b * b
+    ac4block = -(a * c * 4)
+    ablock = a * 2
+    undersqrt = bsquare + ac4block
+    sqrt1 = Math.sqrt undersqrt
+    top1 = sqrt1 + b2
+    answer1 = top1 / ablock
+    top2 = sqrt1 - b2
+    answer2 = top2 / ablock
+
+    puts "Answer one is:"
+    puts answer1
+    puts "Answer two is:"
+    puts answer2
+  end
+  if resp == 3
+    puts "Y value 1?"
+    y1 = gets.to_f
+    puts "Y value 2?"
+    y2 = gets.to_f
+    puts "X Value 1?"
+    x1 = gets.to_f
+    puts "X Value 2?"
+    x2 = gets.to_f
+    yout = y2 - y1
+    xout = x2 - x1
+    m = yout / xout
+    puts m
+  end
+  if resp == 4
+    puts "What Sequence of numbers in The fibinacci sequence do you want?"
+    inum = gets.to_i
+    outnum1 = 0
+    outnum2 = 1
+    if inum == 1
+      puts "1"
+    end
+
+    if  inum > 1
+      inum2 = inum - 1
+      inum = inum2
+      inum.times do
+        outnum3 = outnum2
+        tempnum = outnum1 + outnum2
+        outnum2 = tempnum
+        outnum1 = outnum3
+      end
+      puts outnum2
+    end
+  end
+  if resp < 1
+    puts "Invalid output enter proper number"
+  end
+  if resp > 4
+    puts "Invalid output enter proper number"
+  end
+
+end
+if resp > 4
+  puts "Invalid output enter proper number"
+  puts "What would you like to run? Press 1 for distance calculator on a line. Press 2 for Quadratic. Press 3 for Slope. Press 4 for Fibinacci"
+  resp = gets.to_f
+  if resp == 1
+    puts "Input X1"
+    x1 = gets.to_f
+    puts "input X2"
+    x2 = gets.to_f
+    puts "input Y1"
+    y1 = gets.to_f
+    puts "input Y2"
+    y2 = gets.to_f
+    xout1 = x2 -x1
+    xout2 = xout1 * xout1
+    yout1 =y2 - y1
+    yout2 = yout1 * yout1
+    allout1 = yout2 + xout2
+    ans = Math.sqrt(allout1)
+    puts "The Answer is:"
+    puts ans
+  end
+  if resp == 2
+    puts "Welcome to quadratic formula calulator"
+    puts "Input Value A"
+    a = gets.to_f
+    puts "Input Value B"
+    b = gets.to_f
+    puts "Input Value C"
+    c = gets.to_f
+    b2 = -(b)
+    bsquare = b * b
+    ac4block = -(a * c * 4)
+    ablock = a * 2
+    undersqrt = bsquare + ac4block
+    sqrt1 = Math.sqrt undersqrt
+    top1 = sqrt1 + b2
+    answer1 = top1 / ablock
+    top2 = sqrt1 - b2
+    answer2 = top2 / ablock
+
+    puts "Answer one is:"
+    puts answer1
+    puts "Answer two is:"
+    puts answer2
+  end
+  if resp == 3
+    puts "Y value 1?"
+    y1 = gets.to_f
+    puts "Y value 2?"
+    y2 = gets.to_f
+    puts "X Value 1?"
+    x1 = gets.to_f
+    puts "X Value 2?"
+    x2 = gets.to_f
+    yout = y2 - y1
+    xout = x2 - x1
+    m = yout / xout
+    puts m
+  end
+  if resp == 4
+    puts "What Sequence of numbers in The fibinacci sequence do you want?"
+    inum = gets.to_i
+    outnum1 = 0
+    outnum2 = 1
+    if inum == 1
+      puts "1"
+    end
+
+    if  inum > 1
+      inum2 = inum - 1
+      inum = inum2
+      inum.times do
+        outnum3 = outnum2
+        tempnum = outnum1 + outnum2
+        outnum2 = tempnum
+        outnum1 = outnum3
+      end
+      puts outnum2
+    end
+  end
+  if resp < 1
+    puts "Invalid output enter proper number"
+  end
+  if resp > 4
+    puts "Invalid output enter proper number"
+  end
+end

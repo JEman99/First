@@ -1,0 +1,10 @@
+puts "Enter a number"
+n =gets.to_f
+if n < 0
+  puts "Negative"
+elsif n > 0
+  puts "Positive"
+else
+  puts "Its zero you dumbass"
+  end
+

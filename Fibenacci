@@ -1,0 +1,19 @@
+puts "What Sequence of numbers in The fibinacci sequence do you want?"
+inum = gets.to_i
+outnum1 = 0
+outnum2 = 1
+if inum == 1
+  puts "1"
+end
+
+if  inum > 1
+   inum2 = inum - 1
+  inum = inum2
+inum.times do
+  outnum3 = outnum2
+  tempnum = outnum1 + outnum2
+  outnum2 = tempnum
+  outnum1 = outnum3
+end
+puts outnum2
+end

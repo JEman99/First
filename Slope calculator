@@ -1,0 +1,12 @@
+puts "Y value 1?"
+y1 = gets.to_f
+puts "Y value 2?"
+y2 = gets.to_f
+puts "X Value 1?"
+x1 = gets.to_f
+puts "X Value 2?"
+x2 = gets.to_f
+yout = y2 - y1
+xout = x2 - x1
+m = yout / xout
+puts m

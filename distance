@@ -1,0 +1,16 @@
+puts "Input X1"
+x1 = gets.to_f
+puts "input X2"
+x2 = gets.to_f
+puts "input Y1"
+y1 = gets.to_f
+puts "input Y2"
+y2 = gets.to_f
+xout1 = x2 -x1
+xout2 = xout1 * xout1
+yout1 =y2 - y1
+yout2 = yout1 * yout1
+allout1 = yout2 + xout2
+ans = Math.sqrt(allout1)
+puts "The Answer is:"
+puts ans
