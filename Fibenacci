@@ -17,3 +17,7 @@ inum.times do
 end
 puts outnum2
 end
+
+if inum < 1
+  puts "There are no negative fibinacci numbers!"
+end

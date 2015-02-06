@@ -1,0 +1,8 @@
+puts "input first number"
+num1 = gets.to_i
+puts "input operation"
+op1 = gets.to_s
+puts "input second number"
+num2 =gets.to_i
+output = num1 op1 num2
+puts output

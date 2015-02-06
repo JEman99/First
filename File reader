@@ -1,0 +1,13 @@
+f = File.new("./data.txt", "r")
+data = f.read
+f.close
+
+puts data
+
+puts "How many times?"
+n = gets.to_i
+
+f = File.new("./data.txt", "w")
+f.write data*n
+f.close
+``
